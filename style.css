@@ -1,5 +1,5 @@
 body {
-	background-color: #4C4B63;
+	background-color: #3D62A6;
 }
 
 #bigbox {
@@ -34,7 +34,7 @@ body {
 	width: 10%;
 	height: 75%;
 	background-color: #5386E4;
-	margin-left: 15%;
+	margin-left: 13%;
 	float: right;
 }
 
@@ -53,8 +53,9 @@ body {
 	height: 100%;
 	text-align: center;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 150%;
 	cursor: pointer;
+	border: none;
 }
 
 #maincomp {
@@ -66,9 +67,14 @@ body {
 	margin-top: 35px;
 }
 
+.round {
+	border: black 2px solid;
+	border-radius: 4px;
+}
+
 @media only screen 
-	and (max-device-width: 375px) 
-	and (max-device-height: 667px) 
+	and (max-device-width: 500px) 
+	and (max-device-height: 1000px) 
 	and (orientation: portrait) {
 
 		#bigbox {
@@ -96,7 +102,7 @@ body {
 		#x2 {
 			width: 20%;
 			height: 100%;
-			margin-left: 5%;
+			margin-left: 3.75%;
 		}
 
 		#newcomp {
@@ -104,6 +110,10 @@ body {
 			height: 100%;
 			margin-left: 5%;
 			margin-right: 5%;
+		}
+
+		.button {
+			font-size: 250%;
 		}
 
 		#maincomp {
@@ -114,15 +124,14 @@ body {
 }
 
 @media only screen 
-	and (max-device-width: 667px) 
-	and (max-device-height: 375px) 
+	and (max-device-width: 1000px) 
+	and (max-device-height: 500px) 
 	and (orientation: landscape) {
 
 		#box1 {
 			width: 450px;
 			height: 450px;
-			margin-top: 5%;
-			margin-bottom: 10%;
+			margin-top: 4%;
 			float: right;
 			margin-right: 2.5%;
 			margin-left: 0%;
@@ -132,7 +141,7 @@ body {
 			width: 50%;
 			height: 75px;
 			float: left;
-			margin-top: 5%;
+			margin-top: 4%;
 		}
 
 		#x {
@@ -146,7 +155,7 @@ body {
 		#x2 {
 			width: 15%;
 			height: 100%;
-			margin-right: 10%;
+			margin-right: 7%;
 			margin-left: 0%;
 			float: left;
 		}
@@ -159,12 +168,16 @@ body {
 			float: left;
 		}
 
+		.button {
+			font-size: 125%;
+		}
+
 		#maincomp {
 			width: 30%;
 			height: 75px;
 			margin-top: 5%;
 			float: right;
-			margin-right: 10.5%;
-			margin-left: 10%;
+			margin-right: 9%;
+			margin-left: 9%;
 		}
 }
